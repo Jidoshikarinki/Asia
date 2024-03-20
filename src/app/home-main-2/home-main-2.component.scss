@@ -1,0 +1,119 @@
+.main2 {
+    background-image: url(../../assets/Images/Background.png);
+    height: 680px;
+    background-size: cover;
+  
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      * {
+        color: white;
+        margin-right: 125px;
+      }
+  
+      h1 {
+        margin-top: 100px;
+        color: #ffc600;
+        margin-top: 200px;
+      }
+  
+      h3 {
+        font-family: "Marck Script", cursive;
+      }
+    }
+  }
+  
+  .COUNTRIES {
+    background-color: #0b1330;
+    padding-bottom: 30px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .Total {
+      display: flex;
+      align-items: center;
+  
+      h3 {
+        color: wheat !important;
+        margin-left: 20px;
+        padding-top: 20px;
+      }
+    }
+  
+    .country-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+      overflow-y: auto;
+      padding-bottom: 20px;
+      width: 77%;
+      max-height: 450px;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 150px;
+  
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        background: #1b1a29;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #6989a3;
+        border-radius: 10px;
+        border: 3px solid #1b1a29;
+      }
+  
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #2b4c6f;
+      }
+  
+      .card {
+        margin: 10px;
+        background-color: #1b1a29;
+        height: 425px;
+        width: 300px;
+  
+        * {
+          color: white;
+        }
+  
+        .dark-bule {
+          color: #6989a3;
+        }
+  
+        img {
+          height: 200px;
+          width: 100%;
+          object-fit: cover;
+        }
+  
+        .card-body {
+          padding: 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+  
+          .card-title {
+            height: 50px;
+          }
+  
+          .card-text {
+            height: 80px;
+          }
+        }
+  
+        .btn {
+          margin-top: auto;
+        }
+      }
+    }
+  }

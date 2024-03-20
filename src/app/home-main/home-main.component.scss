@@ -1,0 +1,142 @@
+header {
+  transform: translateY(50px);
+
+  .row {
+    height: 100vh;
+    background-image: url(https://wallpapercosmos.com/w/full/0/f/a/1449615-3840x2160-desktop-4k-asia-wallpaper-photo.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+
+    .col-6 {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        transform: scale(2);
+        text-decoration: none;
+
+        .upper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            height: 80px;
+            margin-right: 0;
+            transition: 2000s;
+          }
+
+          .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            * {
+              color: white;
+            }
+
+            h6 {
+              margin: 0;
+              font-size: 15px;
+              padding: 0;
+              transition: 2s;
+            }
+
+            h1 {
+              margin: 0;
+              font-size: 40px;
+              padding: 0;
+              transition: 2s;
+            }
+          }
+        }
+
+        .upper:hover {
+
+          h6 {
+            transform:scale(1.1) translateX(10px);
+            transition: 2s;
+          }
+
+          h1 {
+            transform:scale(1.5) translateX(10px);
+            transition: 2s;
+          }
+
+          img {
+            transform:scale(1.5) translateX(-20px);
+            transition: 2s;
+          }
+        }
+      }
+    }
+
+    .col {
+      background-color: #12225a;
+      display: flex;
+      flex-direction: column;
+
+      .upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+
+        h1 {
+          margin-top: 100px;
+          color: #ffc600;
+          margin-top: 200px;
+        }
+
+        h3 {
+          font-family: "Marck Script", cursive;
+          color: white;
+          margin-bottom: 100px;
+        }
+      }
+
+      .under {
+        img {
+          height: 100px;
+          border-radius: 5px;
+          transition: 0.2s;
+        }
+
+        .first {
+          height: 200px;
+          z-index: 0;
+        }
+
+        .second {
+          z-index: 1;
+          transform: translateX(60px) translateY(250px);
+        }
+
+        .third {
+          height: 125px;
+          z-index: 2;
+          transform: translateX(200px) translateY(280px);
+        }
+
+        .fourth {
+          height: 130px;
+          transform: translateX(-50px) translateY(20px);
+        }
+
+        .fifth {
+          transform: translateX(100px) translateY(-100px);
+        }
+
+        .first:hover {
+          transform: scale(1.05);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
+

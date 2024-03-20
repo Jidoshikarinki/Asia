@@ -1,0 +1,35 @@
+<div class="main2">
+    <div class="row">
+      <div class="col-7"></div>
+
+      <div class="col">
+        <h1>The Asia Informatic Site</h1>
+
+        <h3>Learn More About Asia</h3>
+
+        <h6>
+          Lot of people don't have knowlage about it's biodiversity and
+          continents. Aspecially Americans. So, why not learn about the
+          biggest of them all ━━ Asia? We made this site just for that.
+        </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="COUNTRIES">
+    <div class="Total">
+      <h3>Total Articles: {{ newsData.length }}</h3>
+    </div>
+    <div class="country-container">
+      <ng-container *ngFor="let article of newsData">
+        <div *ngIf="article.urlToImage" class="card">
+          <img [src]="article.urlToImage" class="card-img-top" alt="Article Image">
+          <div class="card-body">
+            <h5 class="card-title">{{ article.title.length > 25 ? article.title.slice(0, 25) + '...' : article.title }}</h5>
+            <p class="card-text">{{ article.description.length > 50 ? article.description.slice(0, 25) + '...' : article.description }}</p>
+            <a [href]="article.url" class="btn btn-primary" target="_blank">Read more</a>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
